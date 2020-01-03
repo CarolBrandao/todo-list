@@ -1,15 +1,16 @@
 import React from 'react'
 import './app.css'
+import Footer from './components/footer'
+import AddTodo from './components/add-todo'
+import List from './components/list'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="logo.svg" className="App-logo" alt="logo" />
-        <p>
-          This is a todo list application.
-        </p>
-      </header>
+    <div className="app-wrapper">
+      <AddTodo />
+      <List />
+      <Footer />
     </div>
   )
 }
